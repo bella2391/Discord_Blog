@@ -1,0 +1,53 @@
+  /* 左右いっぱいに伸びた横線 */
+  .heading {
+    align-items: center; /* 横線を上下中央 */
+    display: flex; /* 文字と横線を横並び */
+  }
+  .heading::before,
+  .heading::after {
+    background-color: #1e90ff; /* 横線の色 */
+    border-radius: 5px; /* 横線の両端を丸く */
+    content: "";
+    flex-grow: 1; /* 横幅いっぱい */
+    height: 5px; /* 横線の高さ */
+  }
+  .heading::before {
+    margin-right: 15px; /* 文字との余白 */
+  }
+  .heading::after {
+    margin-left: 15px; /* 文字との余白 */
+  }
+  /* レイアウトのためのcss */
+  h2 {
+    color: #333;
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    color: #00ff00;
+  }
+  .container {
+    background-color: #d6ffff;
+    margin-inline: auto;
+    margin-top: 60px;
+    width: 90%;
+  }
+  .D{
+      display: inline-block;
+      background: #b6beff;
+      padding: 5px 10px;
+      cursor: pointer;
+  }
+  .D2{
+    display: inline-block;
+    background: black;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  .E{
+      display: none;
+      background: black;
+      height: 470px;
+  }
+
+  
