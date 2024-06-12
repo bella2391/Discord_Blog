@@ -1,0 +1,112 @@
+/*カレンダー*/
+.wrapper{
+    max-width: 600px;
+    margin: 0 auto;
+    color: #666;
+  }
+  
+  
+  .calendar-header {
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+    margin: 1rem 0 0;
+  }
+  
+  
+  /*カレンダー*/
+  #calendar {
+    text-align: center;
+    width: 100%;
+  }
+  table {
+    outline: 2px solid #ddd;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th {
+    color: #000;
+  }
+  th, td {
+    outline: 1px solid #ddd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  /*日曜日*/
+  td:first-child {
+    color: red;
+  }
+  /*土曜日*/
+  td:last-child {
+    color: blue;
+  }
+  /*前後月の日付*/
+  td.disabled {
+    color: #ccc;
+  }
+  /*本日*/
+  td.today {
+    background-color: #D65E72;
+    color: #fff;
+  }
+  .circle{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    margin-left: -10px;
+    line-height: 45px;
+    border-radius: 50%;
+    border: solid 3px skyblue;
+    }
+  /*ボタン*/
+  .calendar-header__prev{
+    margin-right:50px;
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    vertical-align: middle;
+    border: 1px solid;
+    border-radius: 6px;
+    color: #ffffff;
+    background-color: #0926a8;
+    border-color: #1b1f2326;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+    transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    transition-property: color, background-color, border-color;
+    :hover {
+        background-color: #2c974b;
+        border-color: #1b1f2326;
+        transition-duration: 0.1s;
+    }
+  }
+  
+  .calendar-header__next{
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    vertical-align: middle;
+    border: 1px solid;
+    border-radius: 6px;
+    color: #ffffff;
+    background-color: #0926a8;
+    border-color: #1b1f2326;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+    transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    transition-property: color, background-color, border-color;
+    :hover {
+        background-color: #2c974b;
+        border-color: #1b1f2326;
+        transition-duration: 0.1s;
+    }
+  }    
+  
